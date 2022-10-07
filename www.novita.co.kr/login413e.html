@@ -1,0 +1,235 @@
+
+
+
+
+
+	
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.novita.co.kr/login?returnUrl=/customer-center/as-application-form by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Oct 2022 02:32:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	
+	
+
+
+
+<title>로그인 | 노비타(NOVITA)</title>
+<meta charset="utf-8">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="로그인, 노비타 로그인, 회원가입, 노비타 회원가입, 노비타(NOVITA), 아이디 찾기," />
+<meta name="description" content="노비타의 로그인 화면입니다. " />
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="로그인 | 노비타(NOVITA)" />
+<meta property="og:description" content="노비타의 로그인 화면입니다. ">
+<meta property="og:url" content="login.html">
+
+
+<link rel="stylesheet" href="assets/css/default.css">
+<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/common_front.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+
+<style>
+	[v-cloak] {display: none !important}
+	.document-dimed, .loading-dimed {position:fixed;top:0;left:0;bottom:0;right:0;z-index:999;background:#aaa;opacity:0.7;}
+	.loading-dimed.visual {position:absolute;top:0;left:0;width:100%;height:100%;}
+	.loading-dimed {z-index:2000;}
+	.loading-dimed:after {content:'';position:absolute;top:50%;left:50%;z-index:1;width:40px;height:40px;margin:-20px 0 0 -20px;background:url('images/loading.svg') no-repeat 0 0;}
+	.loading-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;background:#000;}
+	.document-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.8;background:#000;}
+</style>
+<style>
+<!--
+	.lbMaxlenPrnt{position:relative;}
+	.lbMaxlen{position:absolute; top:5px; right:5px; color: #aaa;}
+	.lbMaxlen_textarea{position:absolute; top:5px; right:25px; color: #aaa;}
+-->
+</style>
+
+
+
+
+
+<script src="common/js/jquery.form.min.js"></script>
+<script src="common/js/jquery.validate.min.js"></script>
+<script src="common/js/vue.js"></script>
+<script src="common/js/jquery.cookie.js"></script>
+
+<script src="common/js/jstree.js"></script>
+
+
+<script src="common/js/moment.min.js"></script>
+<script src="common/js/moment-timezone-with-data.min.js"></script>
+
+
+
+
+<script src="js/vueComponent/vue-filter.js" ></script>
+<script src="js/vueComponent/vue-datepicker.js"></script>
+<script src="js/vueComponent/vue-telno.js"></script>
+<script src="js/app/App.js"></script>
+<script src="js/app/Authencation.js"></script>
+<script>
+	$(function() {
+		var option = {};
+		option.locale = 'en';
+		App.init(option);
+	});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71019138-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-71019138-1');
+</script>
+ -->
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K4TRMTM');</script>
+<!-- End Google Tag Manager -->
+
+	
+</head>
+<body class=""
+	data-device-type="pc" data-language="en" data-layout="empty-pc">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4TRMTM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<div id="wrap" class="login">
+        <div id="container" class="login-wrap">
+            <h1 class="logo"><a href="index.html"><img src="assets/images/login/logo.svg" alt="novita 로고"></a></h1>
+            <div class="ui-tab">
+                <div class="tab-nav level-2">
+                    <a href="login.html" data-tab-target="#tab_01" class="active">회원 로그인</a>
+                    <a href="order-lookup.html" data-tab-target="#tab_02">비회원 주문조회</a>
+                </div>
+                <div class="tab-content">
+                    <div id="tab_01" class="active">
+                        <form id="loginForm" name="loginForm" method="post" action="https://www.novita.co.kr/j_spring_security_check">
+                            <input type="hidden" name="" value="" />
+                            <input type="hidden" value="/customer-center/as-application-form" name="returnUrl" />
+
+                            <div class="input-area">
+                                <div>
+	                                <input type="text" id="j_username" name="j_username" value=""
+										maxlength="20" placeholder="아이디를 입력해 주세요">
+                                </div>
+                                <div>
+	                                <input type="password" id="j_password" name="j_password"
+										maxlength="20" placeholder="비밀번호를 입력해 주세요">
+                                </div>
+                            </div>
+                            <div class="sub-area">
+                                <label class="input-check">
+	                                <input type="checkbox" id="saveId" name="saveId" value="Y"
+										>
+	                                <span>아이디 저장</span>
+                                </label>
+                                <div>
+	                                <span><a href="account/find-id.html" data-popup-target="#pop_1">아이디 찾기</a></span>
+	                                <span><a href="account/reset-password.html" data-popup-target="#pop_1">비밀번호 찾기</a></span>
+	                                <span><a href="join/agreement.html">회원가입</a></span>
+                                </div>
+                            </div>
+                            <div class="btn-group wide">
+                                <button type="button" name="button" class="btn-rad im-active btnLogin">로그인</button>
+                            </div>
+                            <div class="sns-login">
+                                <em>
+                                    SNS 계정으로<br>
+                                    간편하게 로그인하기
+                                </em>
+                                <span>
+                                    <a href="javascript:;" class="naver naver-login">
+                                        <img src="assets/images/login/naver.png" alt="naver 로고">
+                                        네이버 로그인
+                                    </a>
+                                    <a href="javascript:;" class="kakao kakao-login">
+                                        <img src="assets/images/login/kakao.png" alt="kakao 로고">
+                                        카카오 로그인
+                                    </a>
+                                </span>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	<script src="../developers.kakao.com/sdk/js/kakao.js"></script>
+	<script src="js/app/Login.js"></script>
+	<script>
+		$(function() {
+			var options = {
+				err : '',
+				kakao_appkey_script : '647394db695107a4a7c601afe975c6fc',
+			};
+			Login.init(options);
+		});
+
+		$(window).load(function(){
+			var options = {
+				err : ''
+			};
+
+			if (options.err == '1') {
+				alert('아이디가 없거나, 비밀번호가 일치하지 않습니다.');
+			} else if (options.err == '2') {
+				alert('비밀번호 5회 틀렸습니다.\n고객센터를 통하여 비밀번호 오류 횟수를 초기화 하세요.');
+			}
+      setHost();
+		});
+
+    function setHost() {
+      var domain = 'index.html'
+      var currDomain = location.protocol + '//' +  document.location.hostname;
+      var port = location.port;
+
+      if (location.port == 80 || port == 443 || port == '') {
+        currDomain = currDomain;
+      } else {
+        currDomain = currDomain + ':' + port;
+      }
+
+      if (domain !=  currDomain) {
+        location.href = domain + '/login';
+      }
+    }
+	</script>
+
+</body>
+
+<!-- Mirrored from www.novita.co.kr/login?returnUrl=/customer-center/as-application-form by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Oct 2022 02:32:31 GMT -->
+</html>
+
+
+

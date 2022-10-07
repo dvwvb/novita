@@ -1,0 +1,250 @@
+
+
+
+
+
+	
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.novita.co.kr/join/agreement by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Oct 2022 02:32:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	
+	
+
+
+
+<title>약관동의 | 회원가입 | 노비타(NOVITA)</title>
+<meta charset="utf-8">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="약관동의, 회원가입, 노비타 회원가입, 노비타 회원, 노비타(NOVITA)" />
+<meta name="description" content="노비타 회원가입을 위한 약관 동의 및 본인인증을 하는 화면입니다." />
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="약관동의 | 회원가입 | 노비타(NOVITA)" />
+<meta property="og:description" content="노비타 회원가입을 위한 약관 동의 및 본인인증을 하는 화면입니다.">
+<meta property="og:url" content="agreement.html">
+
+
+<link rel="stylesheet" href="../assets/css/default.css">
+<script type="text/javascript" src="../assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/common_front.js"></script>
+<script type="text/javascript" src="../assets/js/ui.js"></script>
+
+<style>
+	[v-cloak] {display: none !important}
+	.document-dimed, .loading-dimed {position:fixed;top:0;left:0;bottom:0;right:0;z-index:999;background:#aaa;opacity:0.7;}
+	.loading-dimed.visual {position:absolute;top:0;left:0;width:100%;height:100%;}
+	.loading-dimed {z-index:2000;}
+	.loading-dimed:after {content:'';position:absolute;top:50%;left:50%;z-index:1;width:40px;height:40px;margin:-20px 0 0 -20px;background:url('../images/loading.svg') no-repeat 0 0;}
+	.loading-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;background:#000;}
+	.document-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.8;background:#000;}
+</style>
+<style>
+<!--
+	.lbMaxlenPrnt{position:relative;}
+	.lbMaxlen{position:absolute; top:5px; right:5px; color: #aaa;}
+	.lbMaxlen_textarea{position:absolute; top:5px; right:25px; color: #aaa;}
+-->
+</style>
+
+
+
+
+
+<script src="../common/js/jquery.form.min.js"></script>
+<script src="../common/js/jquery.validate.min.js"></script>
+<script src="../common/js/vue.js"></script>
+<script src="../common/js/jquery.cookie.js"></script>
+
+<script src="../common/js/jstree.js"></script>
+
+
+<script src="../common/js/moment.min.js"></script>
+<script src="../common/js/moment-timezone-with-data.min.js"></script>
+
+
+
+
+<script src="../js/vueComponent/vue-filter.js" ></script>
+<script src="../js/vueComponent/vue-datepicker.js"></script>
+<script src="../js/vueComponent/vue-telno.js"></script>
+<script src="../js/app/App.js"></script>
+<script src="../js/app/Authencation.js"></script>
+<script>
+	$(function() {
+		var option = {};
+		option.locale = 'en';
+		App.init(option);
+	});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71019138-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-71019138-1');
+</script>
+ -->
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K4TRMTM');</script>
+<!-- End Google Tag Manager -->
+
+	
+</head>
+<body class=""
+	data-device-type="pc" data-language="en" data-layout="empty-pc">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4TRMTM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<form name="editForm" id="editForm" method="post">
+	    <div id="wrap" class="login vuelayer" v-cloak>
+	        <div id="container" class="terms">
+	            <h1 class="logo"><a href="../index.html"><img src="../assets/images/login/logo.svg" alt="novita 로고"></a></h1>
+	            <h2>약관동의 및 본인인증</h2>
+	            <p>
+	                필수 약관동의 및 본인인증을 통해 회원가입을 할 수 있습니다.
+	            </p>
+	            <div class="terms-wrap">
+	                <div class="chk-all">
+	                    <label class="input-check">
+	                        <input type="checkbox" v-model="checkAll" ref="checkAll"
+								v-on:change="onchangeCheckAll">
+	                        <span>전체 동의</span>
+	                    </label>
+	                </div>
+	                <div class="terms-list">
+	                    <h3>필수 약관</h3>
+	                    <ul>
+	                        <li>
+	                            <label class="input-check">
+	                                <input type="checkbox" v-model="resultVo.termsAgreementYn"
+	                                	ref="termsAgreementYn" v-on:change="onchangeCheck"
+	                                	true-value="Y" false-value="N"
+	                                	name="termsAgreementYn" value="Y">
+	                                <span><em>(필수)</em> 이용약관에 동의합니다</span>
+	                            </label>
+	                            <a href="../info/terms-of-use.html" target="blank">내용보기</a>
+	                        </li>
+	                        <li>
+	                            <label class="input-check">
+	                                <input type="checkbox" v-model="resultVo.picAgreementYn"
+	                                	ref="picAgreementYn" v-on:change="onchangeCheck"
+	                                	true-value="Y" false-value="N"
+	                                	name="picAgreementYn" value="Y">
+	                                <span><em>(필수)</em> 개인정보 수집 및 이용에 동의합니다</span>
+	                            </label>
+	                            <a href="../info/privacy-policy.html" target="blank">내용보기</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	                <div class="terms-list">
+	                    <h3>마케팅 정보 수신 여부</h3>
+	                    <ul>
+	                        <li>
+	                            <label class="input-check">
+	                                <input type="checkbox" v-model="resultVo.emailRecptnAgreYn"
+	                                	ref="emailRecptnAgreYn" v-on:change="onchangeCheck"
+	                                	true-value="Y" false-value="N"
+	                                	name="emailRecptnAgreYn" value="Y">
+	                                <span>(선택) 이메일 수신 여부</span>
+	                            </label>
+	                        </li>
+	                        <li>
+	                            <label class="input-check">
+	                                <input type="checkbox" v-model="resultVo.smsRecptnAgreYn"
+	                                	ref="smsRecptnAgreYn" v-on:change="onchangeCheck"
+	                                	true-value="Y" false-value="N"
+	                                	name="smsRecptnAgreYn" value="Y">
+	                                <span>(선택) 문자 수신 여부</span>
+	                            </label>
+	                        </li>
+	                    </ul>
+	                    <ul class="bullet-o">
+	                        <li>수신 동의 시, 노비타에서 제공하는 혜택 등 최근 소식을 가장 먼저 받아보실 수 있습니다.</li>
+	                        <li>정보성 내용은 정보통신망 법률 등 관련 규정에 의거하여 수신 여부와 상관없이 발송됩니다.</li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <div class="terms-wrap">
+	                <div class="terms-list">
+	                    <h3>본인인증</h3>
+	                    <div class="btn-group wide">
+							<button type="button" v-on:click="onclickAuth" name="button" class="btn-medium im-active">휴대폰 본인인증</button>
+						</div>
+                        <p class="bullet-caution">입력한 정보는 본인확인을 위해서 <span class="fc-purple">나이스평가정보</span>에 제공되며, 본인확인 용도 외에 사용하거나 저장되지 않습니다.</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</form>
+
+	<script src="../js/app/JoinAgreement.js" ></script>
+	<script>
+		$(function() {
+			var options = {};
+			JoinAgreement.init(options);
+		});
+
+		function vueUpdated(vm) {
+			console.log('vueUpdated')
+		}
+
+		
+		window.name ="Parent_window";
+		function fnCheckplusPopup() {
+			var url = '/nice-id/request?from=join';
+			window.open(url, 'popupChk', 'width=500, height=550, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no');
+		}
+		function onSuccess() {
+			var $form = $('#editForm');
+			$form.attr('action', '/join/form');
+			$form.submit();
+		}
+
+	</script>
+
+	<!-- 픽셀코드 추가 2022.07.22  시작 -->
+	<script language='JavaScript1.1' async src='http://pixel.mathtag.com/event/js?mt_id=1603062&amp;mt_adid=256128&amp;mt_exem=&amp;mt_excl=&amp;v1=&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3='></script>
+	<script type="text/javascript">
+	var axel = Math.random() + "";
+	var a = axel * 10000000000000;
+	document.write('<img src="https://ad.doubleclick.net/ddm/activity/src=12299233;type=invmedia;cat=joinp0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=;gdpr_consent=;ord=' + a + '?" width="1" height="1" alt=""/>');
+	</script>
+	<noscript>
+	<img src="https://ad.doubleclick.net/ddm/activity/src=12299233;type=invmedia;cat=joinp0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=;gdpr_consent=;ord=1?" width="1" height="1" alt=""/>
+	</noscript>
+	<!-- End of Floodlight Tag: Please do not remove -->
+	<!-- 픽셀코드 추가 2022.07.22  끝 -->
+
+</body>
+
+<!-- Mirrored from www.novita.co.kr/join/agreement by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Oct 2022 02:32:33 GMT -->
+</html>
+
+
+

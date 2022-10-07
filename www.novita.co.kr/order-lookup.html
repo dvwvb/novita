@@ -1,0 +1,265 @@
+
+
+
+
+
+	
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.novita.co.kr/order-lookup by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Oct 2022 02:32:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	
+	
+
+
+
+<title>비회원 주문조회 | 노비타(NOVITA)</title>
+<meta charset="utf-8">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="비회원 주문조회, 노비타 비회원 주문조회, 노비타(NOVITA)" />
+<meta name="description" content="노비타의 비회원 주문조회 화면입니다. " />
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="비회원 주문조회 | 노비타(NOVITA)" />
+<meta property="og:description" content="노비타의 비회원 주문조회 화면입니다. ">
+<meta property="og:url" content="order-lookup.html">
+
+
+<link rel="stylesheet" href="assets/css/default.css">
+<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/common_front.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+
+<style>
+	[v-cloak] {display: none !important}
+	.document-dimed, .loading-dimed {position:fixed;top:0;left:0;bottom:0;right:0;z-index:999;background:#aaa;opacity:0.7;}
+	.loading-dimed.visual {position:absolute;top:0;left:0;width:100%;height:100%;}
+	.loading-dimed {z-index:2000;}
+	.loading-dimed:after {content:'';position:absolute;top:50%;left:50%;z-index:1;width:40px;height:40px;margin:-20px 0 0 -20px;background:url('images/loading.svg') no-repeat 0 0;}
+	.loading-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;background:#000;}
+	.document-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.8;background:#000;}
+</style>
+<style>
+<!--
+	.lbMaxlenPrnt{position:relative;}
+	.lbMaxlen{position:absolute; top:5px; right:5px; color: #aaa;}
+	.lbMaxlen_textarea{position:absolute; top:5px; right:25px; color: #aaa;}
+-->
+</style>
+
+
+
+
+
+<script src="common/js/jquery.form.min.js"></script>
+<script src="common/js/jquery.validate.min.js"></script>
+<script src="common/js/vue.js"></script>
+<script src="common/js/jquery.cookie.js"></script>
+
+<script src="common/js/jstree.js"></script>
+
+
+<script src="common/js/moment.min.js"></script>
+<script src="common/js/moment-timezone-with-data.min.js"></script>
+
+
+
+
+<script src="js/vueComponent/vue-filter.js" ></script>
+<script src="js/vueComponent/vue-datepicker.js"></script>
+<script src="js/vueComponent/vue-telno.js"></script>
+<script src="js/app/App.js"></script>
+<script src="js/app/Authencation.js"></script>
+<script>
+	$(function() {
+		var option = {};
+		option.locale = 'en';
+		App.init(option);
+	});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71019138-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-71019138-1');
+</script>
+ -->
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K4TRMTM');</script>
+<!-- End Google Tag Manager -->
+
+	
+</head>
+<body class=""
+	data-device-type="pc" data-language="en" data-layout="empty-pc">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4TRMTM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<div id="wrap" class="login">
+        <div id="container" class="login-wrap">
+            <h1 class="logo"><a href="index.html"><img src="assets/images/login/logo.svg" alt="novita 로고"></a></h1>
+            <div class="ui-tab">
+                <div class="tab-nav level-2">
+                    <a href="login.html" data-tab-target="#tab_01">회원 로그인</a>
+                    <a href="order-lookup.html" data-tab-target="#tab_02" class="active">비회원 주문조회</a>
+                </div>
+                <div class="tab-content">
+                    <div id="tab_02" class="active">
+                        <form id="orderForm" name="orderForm" method="post" action="https://www.novita.co.kr/order-lookup/result">
+                            <input type="hidden" name="rnatMbtlnum" id="rnatMbtlnum" />
+                            <div class="input-area">
+                                <div class="input-wrap">
+                                    <div class="txt-input">
+                                        <input type="text" name="orderSn" id="orderSn" placeholder="주문번호를 입력해 주세요" class="num" onkeyup="initShow(0, this)">
+                                        <div class="msg">
+                                            <p class="error">주문번호를 입력해 주세요.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="txt-input">
+                                        <input type="text" name="rnatNm" id="rnatNm" placeholder="주문자명을 입력해 주세요" onkeyup="initShow(1, this)">
+                                        <div class="msg">
+                                            <p class="error">주문자명을 입력해 주세요.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group form-tel txt-input">
+                                        <select name="mbtlnum1" id="mbtlnum1">
+	                                    	
+		                                        <option value="010">010</option>
+	                                    	
+		                                        <option value="011">011</option>
+	                                    	
+		                                        <option value="016">016</option>
+	                                    	
+		                                        <option value="017">017</option>
+	                                    	
+		                                        <option value="018">018</option>
+	                                    	
+		                                        <option value="019">019</option>
+	                                    	
+                                        </select>
+	                                    <input type="tel" name="mbtlnum2" id="mbtlnum2" maxlength="4" onkeyup="initShow(2, this)" onkeypress="onlyNum(this)">
+	                                    <span>-</span>
+	                                    <input type="tel" name="mbtlnum3" id="mbtlnum3" maxlength="4" onkeyup="initShow(2, this)" onkeypress="onlyNum(this)">
+                                        <div class="msg">
+                                            <p class="error">휴대폰 번호를 입력해 주세요.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="btn-group wide mt50">
+                                <button type="button" name="button" class="btn-rad im-active btn-order-lookup">주문조회</button>
+                            </div>
+                            <ul class="dot-list">
+                                <li>비회원 고객님께서 주문하신 제품의 목록과 배송상태를 확인하실 수 있습니다.</li>
+                                <li>주문 번호는 주문 시 전송된 이메일 혹은 카카오 알림톡에서 확인 가능합니다.</li>
+                                <li>주문번호를 잊어버린 경우 <a href="customer-center/inquiry-main.html">1:1문의</a> 및 고객상담센터 1588-6560으로 문의바랍니다.</li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="common/js/common.js" ></script>
+	<script>
+
+		$(function() {
+			$('.btn-order-lookup').on('click', function() {
+				if ($.trim($('#orderSn').val()) == '') {
+					//alert('주문번호를 입력해 주세요.');
+            $('.txt-input').eq(0).addClass('show');
+					$('#orderSn').val('').focus();
+					return false;
+				}
+				if ($.trim($('#rnatNm').val()) == '') {
+					//alert('주문자명을 입력해 주세요.');
+            $('.txt-input').eq(1).addClass('show');
+					$('#rnatNm').val('').focus();
+					return false;
+				}
+				if ($.trim($('#mbtlnum1').val()) == '') {
+					//alert('휴대폰 번호를 입력해 주세요.');
+            $('.txt-input').eq(2).addClass('show');
+					$('#mbtlnum1').val('').focus();
+					return false;
+				}
+				if ($.trim($('#mbtlnum2').val()) == '') {
+					//alert('휴대폰 번호를 입력해 주세요.');
+            $('.txt-input').eq(2).addClass('show');
+					$('#mbtlnum2').val('').focus();
+					return false;
+				}
+				if ($.trim($('#mbtlnum3').val()) == '') {
+					//alert('휴대폰 번호를 입력해 주세요.');
+            $('.txt-input').eq(2).addClass('show');
+					$('#mbtlnum3').val('').focus();
+					return false;
+				}
+
+				$('#rnatMbtlnum').val($('#mbtlnum1').val() + '-' +
+					$('#mbtlnum2').val() + '-' + $('#mbtlnum3').val());
+
+				$.ajax({ dataType: 'json', type: 'post',
+					url: '/order-lookup/search',
+					data: $('#orderForm').serialize()
+				}).done(function(data) {
+					if (data.existYn == 'N') {
+						alert('주문정보가 올바르지 않습니다.');
+					} else if (data.existYn == 'Y') {
+						$('#orderForm')
+							.attr('method', 'post')
+							.attr('action', '/order-lookup/result')
+							.submit();
+					}
+				});
+
+			});
+
+		});
+
+		function initShow(idx, obj) {
+		    if ('' != obj.value) {
+		        $('.txt-input').eq(idx).removeClass('show');
+        }
+    }
+	</script>
+
+</body>
+
+<!-- Mirrored from www.novita.co.kr/order-lookup by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Oct 2022 02:32:32 GMT -->
+</html>
+
+
+
