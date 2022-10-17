@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-www.novita.co.kr	TRUE	/	FALSE	1999999999	JSESSIONID	6CDC2D3D381B9F721B49859A5C99DB4A.front2
-www.novita.co.kr	TRUE	/	FALSE	1999999999	PRDUCT_SN	%7B%22prductSn%22%3A%2220000000061%22%2C%22material%22%3A%22BD-C510E0%22%2C%22prductNm%22%3A%22%EB%85%B8%EC%A6%90%EA%B5%90%EC%B2%B4%EB%B9%84%EB%8D%B0%22%7D
-
